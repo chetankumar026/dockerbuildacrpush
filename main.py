@@ -8,11 +8,13 @@ from weaviate.embedded import EmbeddedOptions
 
 from fastapi.middleware.cors import CORSMiddleware
 
-def init_weaviate():
-    app.weaviate_client = weaviate.Client(
-        embedded_options=EmbeddedOptions(
-        )
+app.weaviate_client = weaviate.Client(
+    embedded_options=EmbeddedOptions(
+        url="https://testingunb-v65i3yzc.weaviate.network",
+        port=6666
     )
+)
+    
 
 def init_app():
   print("Initiating weaviate")
