@@ -18,7 +18,7 @@ def init_app():
   init_weaviate()
   print("Done Initiating weaviate")
 
-  # Allow all origins 
+  # Allow all origins  yes
   app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
