@@ -16,4 +16,4 @@ COPY . .
 EXPOSE 80
 
 # Tell uvicorn to start spin up our code, which will be running inside the container now
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+#CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
