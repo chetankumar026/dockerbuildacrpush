@@ -10,8 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 def init_weaviate():
     app.weaviate_client = weaviate.Client(
-        embedded_options=EmbeddedOptions(
-        )
+        embedded_options=EmbeddedOptions(port=6666)
     )
 
 def init_app():
