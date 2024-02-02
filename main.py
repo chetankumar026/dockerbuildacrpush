@@ -15,11 +15,11 @@ def init_weaviate():
     )
 
 def init_app():
-  print("Initiating weaviate")
+  print("Initiating weaviateumesh")
   init_weaviate()
   print("Done Initiating weaviate")
 
-  # Allow all origins
+  # Allow all origins 
   app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
