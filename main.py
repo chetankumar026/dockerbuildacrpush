@@ -11,6 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 def init_weaviate():
     app.weaviate_client = weaviate.Client(
         embedded_options=EmbeddedOptions(port=6666)
+        
     )
 
 def init_app():
@@ -18,7 +19,7 @@ def init_app():
   init_weaviate()
   print("Done Initiating weaviate")
 
-  # Allow all origins  yes
+  # Allow all origins  yes Umesh
   app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
